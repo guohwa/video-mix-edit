@@ -1,0 +1,20 @@
+{
+  "segments": [
+    { "file": "clip1.mp4", "trim": { "end": 3 } },
+    { "file": "clip2.mp4" },
+    { "file": "clip3.mp4", "transition": "slideup", "transition_duration": 0.6 }
+  ],
+  "resolution": "9:16",
+  "subtitle": { "enabled": false },
+  "bgm": { "file": "bgm.mp4", "volume": 0.4 },
+  "sfx": {
+    "items": [
+      { "type": "whoosh", "at": "transition", "segment": 1, "volume": 0.8 },
+      { "type": "riser",  "at": "transition", "segment": 1, "volume": 0.7 },
+      { "type": "impact", "at": "transition", "segment": 1, "volume": 0.9 },
+      { "type": "riser",         "at": "transition", "segment": 2, "volume": 0.6 },
+      { "type": "reversecymbal", "at": "transition", "segment": 2, "volume": 0.7 }
+    ]
+  },
+  "output": "final.mp4"
+}
