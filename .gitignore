@@ -1,1 +1,5 @@
-# test
+__pycache__/
+*.pyc
+*.pyo
+*.wav
+tmp/
