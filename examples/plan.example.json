@@ -1,0 +1,40 @@
+{
+  "segments": [
+    {
+      "file": "clip1.mp4",
+      "trim": { "end": 3 },
+      "transition": "slideup",
+      "transition_duration": 0.5
+    },
+    {
+      "file": "clip2.mp4",
+      "trim": { "start": 1, "end": 8 },
+      "transition": "fade",
+      "transition_duration": 0.4
+    },
+    {
+      "file": "clip3.mp4",
+      "transition": "beat"
+    }
+  ],
+  "resolution": "9:16",
+  "crop_mode": "cover",
+  "strip_silence": false,
+  "transition": "fade",
+  "subtitle": {
+    "enabled": true,
+    "language": "zh",
+    "model": "base"
+  },
+  "bgm": {
+    "file": "bgm.mp3",
+    "volume": 0.4
+  },
+  "cta": {
+    "text": "点击下方小黄车 立即抢购",
+    "duration": 3.0,
+    "color": "red",
+    "size": 72
+  },
+  "output": "final.mp4"
+}
