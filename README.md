@@ -25,7 +25,14 @@
 - **Whisper（字幕）**：默认开字幕时需要。脚本按优先级自动探测：`whisper` CLI → `python -m whisper` → `faster-whisper`（轻量、无需 torch，推荐）。首次运行会从 HuggingFace 下载模型权重（base 约 140MB），需联网一次。
 
 ## 用法
+(一)直接口述告诉你安装的智能体：
+ 把视频A的3-5s剪切到视频B的前面，加上xx转场音效，加上xx转场特效，加上xx背景音乐。
 
+ 当然，转场特效、转场音效、背景音乐这些你可以不用特殊说明，它会自动保留原声。
+
+ 默认就有一个转场。
+ 
+（二）用代码的方式运行：
 ```bash
 python "C:/Users/17-0813/.workbuddy/skills/video-mix-edit/scripts/build.py" --plan plan.json
 ```
